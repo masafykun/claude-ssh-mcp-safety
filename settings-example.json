@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__ssh-server__ssh_exec",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/check-ssh-dangerous.sh",
+            "statusMessage": "Checking for dangerous commands..."
+          }
+        ]
+      }
+    ]
+  }
+}
